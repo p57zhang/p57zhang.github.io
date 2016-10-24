@@ -3,7 +3,7 @@
 <html lang="en-US">
 <head>
     <title></title>
-	<meta charset="utf-8" />
+	<meta charset="utf-8" http-equiv="pragma" content="no-cache"/>
 
     <!--
     css styling    
@@ -12,9 +12,11 @@
         p1 {
             color: pink;
         }
+
+      
     </style>
 
-
+    <link rel="stylesheet" href="StyleSheet1.css">
     
 
 </head>
@@ -25,9 +27,18 @@
 
         <h1 id="poo">Peter's Website</h1>
 
-        <p1>paragraphs</p1>
+        <p>paragraphs</p>
+
+        <div class = "test1">
+        <p>hi this paragraph is to test css divs</p>
+        <p> hey this is to test css dvis </p>
+        </div>
 
 
+        <div id="map" style="width:400px;height:400px;background:yellow">
+            
+
+        </div>
     
 
     <a href="http://www.google.com">Link to Google.com</a>
@@ -48,10 +59,18 @@
             document.getElementById("poo").style.color = 'blue';
         }
         
-        
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
 
     </script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKc-A4A0sCkhxpSvcI5BVtxMGxPHRuP24&callback=myMap"></script>
 
+  
 </body>
 </html>
