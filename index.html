@@ -1,76 +1,79 @@
-
 <!DOCTYPE html>
-<html lang="en-US">
+
+<html lang="en">
 <head>
-    <title></title>
-	<meta charset="utf-8" http-equiv="pragma" content="no-cache"/>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fupa Gaming</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
-    <!--
-    css styling    
-     -->
-    <style>
-        p1 {
-            color: pink;
-        }
-
-      
-    </style>
-
-    <link rel="stylesheet" href="StyleSheet1.css">
-    
-
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
 
-
-   
-
-        <h1 id="poo">Peter's Website</h1>
-
-        <p>paragraphs</p>
-
-        <div class = "test1">
-        <p>hi this paragraph is to test css divs</p>
-        <p> hey this is to test css dvis </p>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"><img src="./bootstrap-prestructure_files/Fupagaming.png" class="img-responsive"></div>
+        <div class="col-md-10 text-right text-uppercase">
+          <h1>Fupa Gaming</h1>
+          <h3>Just a bunch of goofballs</h3>
         </div>
-
-
-        <div id="map" style="width:400px;height:400px;background:yellow">
-            
-
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
         </div>
-    
+      </div>
+    </div>
 
-    <a href="http://www.google.com">Link to Google.com</a>
 
-    <img src="/Pictures/titan.jpg" alt="testimage" width="200" height="142">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="http://images.akamai.steamusercontent.com/ugc/538514701200773457/564BE05624284C9701006C84B1451D3B058C06CB/" class="img-responsive">
+        </div>
+      </div>
+    </div>
 
-    <!-- script is here because it needs to run after the HTML is loaded-->
-    <script>
-      
-       
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-uppercase">
+          <h2>Members</h2>
+        </div>
+      </div>
+    </div>
 
-         i = 0;
-        
-        if (i == 2) {
-            document.getElementById("poo").style.color = 'pink';
-        }
-        else {
-            document.getElementById("poo").style.color = 'blue';
-        }
-        
-        function myMap() {
-            var mapCanvas = document.getElementById("map");
-            var mapOptions = {
-                center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-            };
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-        }
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-uppercase">
+          <img src="https://scontent.fyzd1-1.fna.fbcdn.net/v/t1.0-9/11061314_954822417861644_8336952304738836175_n.jpg?oh=1f12026dae227ce5467b7e2cbadb9a4c&oe=58C8385A" class="img-responsive">
+          <h3>Abradolf Lincler</h3>
+          <p><a href="http://steamcommunity.com/profiles/76561198111862677/">View Steam Profile</a></p>
+        </div>
+        <div class="col-md-6 text-uppercase">
+          <img src="https://scontent.fyzd1-1.fna.fbcdn.net/v/t1.0-9/11052541_1032682033412774_1861533902156606027_n.jpg?oh=e769025bbc69c74191ca2e02c378216f&oe=58B2EA05" class="img-responsive">
+          <h3>MoldyTurd</h3>
+          <p><a href="http://steamcommunity.com/id/moldyturd/">View Steam Profile</a></p>
+        </div>
+      </div>
+    </div>
 
-    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-uppercase">
+          <img src="https://scontent.fyzd1-1.fna.fbcdn.net/t31.0-8/13047717_10204541068885460_4676826947429353059_o.jpg" class="img-responsive">
+          <h3>RosePants</h3>
+          <p><a href="http://steamcommunity.com/id/Inavaru/">View Steam Profile</a></p>
+        </div>
+        <div class="col-md-6 text-uppercase">
+          <img src="https://scontent.fyzd1-1.fna.fbcdn.net/t31.0-8/13301497_10153576074180544_4836858286536044888_o.jpg" class="img-responsive">
+          <h3>Shmear</h3>
+          <p><a href="http://steamcommunity.com/id/Schusta677/">View Steam Profile</a></p>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKc-A4A0sCkhxpSvcI5BVtxMGxPHRuP24&callback=myMap"></script>
 
-  
-</body>
-</html>
+</body></html>
